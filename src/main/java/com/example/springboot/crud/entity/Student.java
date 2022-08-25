@@ -1,6 +1,7 @@
-package com.example.springboot.crud.model;
+package com.example.springboot.crud.entity;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Table(name = "student_table" , catalog = "student_database")
@@ -9,20 +10,21 @@ public class Student {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private int age;
-    private String fName;
-    private String lName;
+    private String firstName;
+    private String lastName;
     private String city;
+
 
     public Student(){
         super();
         //TODO Auto-generated constructor stub
     }
 
-    public Student(int id, int age, String fName, String lName, String city) {
+    public Student(int id, int age, String firstName, String lastName, String city) {
         this.id = id;
         this.age = age;
-        this.fName = fName;
-        this.lName = lName;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.city = city;
     }
 
@@ -42,20 +44,20 @@ public class Student {
         this.age = age;
     }
 
-    public String getfName() {
-        return fName;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setfName(String fName) {
-        this.fName = fName;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getlName() {
-        return lName;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setlName(String lName) {
-        this.lName = lName;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getCity() {

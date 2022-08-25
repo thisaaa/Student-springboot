@@ -1,7 +1,8 @@
 package com.example.springboot.crud.serviceImplementation;
 
+//import com.example.springboot.crud.dao.CourseRepository;
 import com.example.springboot.crud.dao.StudentRepository;
-import com.example.springboot.crud.model.Student;
+import com.example.springboot.crud.entity.Student;
 import com.example.springboot.crud.service.StudentInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,6 +13,7 @@ import java.util.List;
 public class StudentServiceImpl implements StudentInterface {
     @Autowired
     private StudentRepository studentRepo;
+    //private CourseRepository courseRepository;
     @Override
     public Student saveStudent(Student student) {
         return studentRepo.save(student);

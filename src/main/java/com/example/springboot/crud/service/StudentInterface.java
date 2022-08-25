@@ -1,6 +1,6 @@
 package com.example.springboot.crud.service;
 
-import com.example.springboot.crud.model.Student;
+import com.example.springboot.crud.entity.Student;
 
 import java.util.List;
 
