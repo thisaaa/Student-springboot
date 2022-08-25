@@ -13,7 +13,6 @@ import java.util.List;
 public class StudentServiceImpl implements StudentInterface {
     @Autowired
     private StudentRepository studentRepo;
-    //private CourseRepository courseRepository;
     @Override
     public Student saveStudent(Student student) {
         return studentRepo.save(student);
