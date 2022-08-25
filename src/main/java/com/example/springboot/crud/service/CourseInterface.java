@@ -7,10 +7,10 @@ import java.util.List;
 
 public interface CourseInterface {
     // To save new course
-    public Student saveCourse(Course course);
+    public Course saveCourse(Course course);
 
     //To update course
-    public Student updateCourse(Course course);
+    public Course updateCourse(Course course);
 
     //to fetch all courses
     public List<Course> findAllStudents();
