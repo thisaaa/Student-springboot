@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @CrossOrigin("*")
-public class HomeController {
+public class UserController {
     @Autowired
     private StudentServiceImpl studentServiceImpl;
 
