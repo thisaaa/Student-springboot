@@ -12,6 +12,12 @@ public class Course {
     private String courseName;
     private String moduleLeaderName;
 
+    public Course(){
+        super();
+        //TODO Auto-generated constructor stub
+    }
+
+
     public Course(int id, int duration, String courseName, String moduleLeaderName) {
         this.id = id;
         this.duration = duration;
