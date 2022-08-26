@@ -23,6 +23,22 @@ public class Controller {
         serviceImpl.saveCourse(course);
         return course;
     }
+    //to get all course details
+    @GetMapping(value = "getAllCourses")
+    public List<Course> findAllCourses(){
+        return serviceImpl.findAllCourses();
+    }
+    //to update course details
+    @PutMapping(value = "updateCourse")
+    public Course updateCourse(@RequestBody Course course){
+        return serviceImpl.updateCourse(course);
+    }
+    //to delete course details
+    @DeleteMapping(value = "deleteCourse")
+    public String deleteCourse(@RequestParam int id){
+        serviceImpl.deleteCourse(id);
+        return "Course Deleted !";
+    }
 
     //to save new student
     @PostMapping(value = "saveStudent")
