@@ -33,7 +33,7 @@ public class ServiceImpl implements StudentInterface, CourseInterface {
 
     @Override
     public void deleteCourse(int id) {
-
+        courseRepo.deleteById(id);
     }
 
     @Override
@@ -49,11 +49,11 @@ public class ServiceImpl implements StudentInterface, CourseInterface {
 
     @Override
     public Course updateCourse(Course course) {
-        return null;
+        return courseRepo.save(course);
     }
 
     @Override
     public List<Course> findAllCourses() {
-        return null;
+        return (List<Course>) courseRepo.findAll();
     }
 }
